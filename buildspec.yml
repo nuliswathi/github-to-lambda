@@ -7,12 +7,19 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - npm install
+
   build:
+    commands:
+      - echo "Building the application..."
+      - npm run build
+
+  post_build:
     commands:
       - echo "Zipping deployment package..."
       - zip -r9 deployment_package.zip .
-  post_build:
-    commands:
       - echo "Updating Lambda Function..."
       - aws lambda update-function-code --function-name test-lambda --zip-file fileb://deployment_package.zip
       - echo "DONE!!"
+
+artifacts:
+  files: 'deployment_package.zip'
