@@ -5,5 +5,5 @@ const dynamoDB = new AWS.DynamoDB.DocumentClient();
 
 exports.handler = (event, context) => {
 
-    console.log("This is the updated test lambda function");
+    console.log("This is the new updated test lambda function");
 }
