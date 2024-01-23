@@ -1,0 +1,20 @@
+{
+  "name": "github-to-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-lambda.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuliswathi/github-to-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuliswathi/github-to-lambda/issues"
+  },
+  "homepage": "https://github.com/nuliswathi/github-to-lambda#readme"
+}
